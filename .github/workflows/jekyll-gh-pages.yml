@@ -39,6 +39,7 @@ jobs:
         run: npm ci
       - run: ls
       - run: cd buh-bingo
+      - run: ls
       - name: Build
         run: npm run build
       - name: Setup Pages
