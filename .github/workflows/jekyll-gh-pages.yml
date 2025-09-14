@@ -37,6 +37,7 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm ci
+      - run: ls
       - run: cd buh-bingo
       - name: Build
         run: npm run build
