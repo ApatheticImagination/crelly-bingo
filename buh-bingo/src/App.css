@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    display: block;
+
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#root {
+    width: 90vw;
+    height: 90vh;
+    text-align: center;
+    margin: 1em 1em 0 1em;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+    padding-bottom: 2em;
+    line-height: 1.1;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.bingo-grid {
+    display: grid;
+    justify-content: stretch;
+    align-content: stretch;
+    gap: 0.2em;
+    height: 80vh;
+    width: 80vh;
+}
+
+.bingo-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.bingo-grid-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.bingo-grid-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.bingo-settings-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 150px;
+    gap: 1rem;
+}
+
+.bingo-square {
+    border: 3px solid rgb(110,151,137);
+    background-color: rgb(142,201,167);
+    border-radius: 12px;
+    font-size: 1.1rem;
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.bingo-square span {
+    display: inline-block;
+    text-wrap: pretty;
+    word-break: break-word;
+}
+
+.bingo-square-marked {
+    color: white;
+    text-decoration: line-through;
+    background-color: rgb(21, 46, 37);
+}
+
+.bingo-square-unmarked {
+    
+    color: black;
+    cursor: pointer;
+}
+
+.bingo-square-unmarked:hover {
+    background-color: #e0e0e0;
+}
+
+.bingo-settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+
+.bingo-settings-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 120px;
+    gap: 0.5rem;
+}
+
+.bingo-settings-item input {
+    height: auto;
+    min-width: 50px;
+}
